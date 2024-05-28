@@ -31,3 +31,4 @@ C:\Users\user\Desktop\New folder\BiddingAPI\obj\Debug\net8.0\refint\BiddingAPI.d
 C:\Users\user\Desktop\New folder\BiddingAPI\obj\Debug\net8.0\BiddingAPI.pdb
 C:\Users\user\Desktop\New folder\BiddingAPI\obj\Debug\net8.0\BiddingAPI.genruntimeconfig.cache
 C:\Users\user\Desktop\New folder\BiddingAPI\obj\Debug\net8.0\ref\BiddingAPI.dll
+C:\Users\user\Desktop\New folder\BiddingAPI\obj\Debug\net8.0\BiddingAPI.sourcelink.json

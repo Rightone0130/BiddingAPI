@@ -1,3 +1,8 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,7 +16,15 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+   // app.UseSwaggerUI();
+
+    app.UseSwaggerUI(c =>
+    {
+        // Explicitly specify the Swagger JSON endpoint
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+        // Serve Swagger UI at the app's root (http://localhost:<port>/)
+        c.RoutePrefix = string.Empty;
+    });
 }
 
 app.UseHttpsRedirection();
